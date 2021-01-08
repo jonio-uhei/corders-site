@@ -1,0 +1,265 @@
+@charset "UTF-8";
+*{
+    box-sizing:border-box;
+}
+a{
+    text-decoration:none;
+}
+h1,h2{
+    font-family:ピグモ;
+    color:#F59109;
+}
+p{
+    line-height:2em;
+}
+#wrap{
+    width: 100%;
+    overflow:hidden;
+}
+header{
+    padding: 20px;
+}
+.header-container{
+    max-width:650px;
+    margin:0 auto;
+    text-align: center;
+    &__logo{
+        vertical-align:middle;
+        animation-name: left-fadein;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+        width: 50px;
+    }
+    @keyframes left-fadein {
+        0% {
+        opacity:0;
+           transform: translateX(-100px);
+        }
+        100% {
+           opacity: 1;
+           transform: translateX(0);
+        }
+    }
+    &__site-title{
+        display: inline-block;
+        font-size: 25px;
+        animation-name: right-fadein;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+       
+    }
+    @keyframes right-fadein {
+        0% {
+        opacity:0;
+           transform: translateX(100px);
+        }
+        100% {
+           opacity: 1;
+           transform: translateX(0);
+        }
+    }
+    &__site-explain{
+        text-align:initial;
+        margin-top: 30px;
+        animation-name: bottom-fadein;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+    }
+    @keyframes bottom-fadein {
+        0% {
+        opacity:0;
+           transform: translateY(100px);
+        }
+        100% {
+           opacity: 1;
+           transform: translateY(0);
+        }
+    }
+    &--bold{
+        font-weight: bold;
+    }
+    span{
+        color:#F59109;
+    }
+}
+.cording-course{
+    background-color:#8ff2c2;
+}
+.site-make-course{
+    background-color:#b4e0f0;
+}
+.main-container{
+    max-width:650px;
+    margin:0 auto ;
+    padding: 70px 20px 50px 20px;
+    position:relative;
+    &__course{
+        font-size: 20px;
+        text-align: center;
+    }
+    &__star{
+        position:absolute;
+        left:60px;
+        animation-name: star;
+        animation-iteration-count: infinite;
+        animation-duration: 3.5s;
+        animation-timing-function:ease-in-out;
+    }
+    @keyframes star {
+        0% {opacity: 0;
+        }
+        50%{
+            opacity:0.5;
+        }
+        100% {opacity: 1;
+        }
+    }
+    
+    &__star1{
+        position:absolute;
+        left:50px;
+        top:30px;
+        animation-name: star1;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+        animation-timing-function:ease-in-out;
+        animation-delay: 2s;
+    }
+    @keyframes star1 {
+        0% {opacity: 0;
+        }
+        50%{
+            opacity:0.5;
+        }
+        100% {opacity: 1;
+        }
+    }
+    &__star3{
+        position:absolute;
+        right:50px;
+        animation-name: star3;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+        animation-timing-function:ease-in-out;
+        animation-delay: 2.5s;
+    }
+    @keyframes star3 {
+        0% {opacity: 0;
+        }
+        50%{
+            opacity:0.5;
+        }
+        100% {opacity: 1;
+        }
+    }
+    &__star4{
+        position:absolute;
+        right:20px;
+        animation-name: star4;
+        animation-iteration-count: infinite;
+        animation-duration: 1.5s;
+        animation-timing-function:ease-in-out;
+        animation-delay: 2s;
+    }
+    @keyframes star4 {
+        0% {opacity: 0;
+        }
+        50%{
+            opacity:0.5;
+        }
+        100% {opacity: 1;
+        }
+    }
+    &__first-view{
+        display: block;
+        width: 60%;
+        margin:40px auto 0;
+    }
+    &__explain{
+        margin-top: 30px;
+    }
+    &--bold{
+        font-weight: bold;
+        cursor:pointer;
+        color:#fa1807;
+    }
+    span{
+        color:#fa1807;
+    }
+} 
+.chat-work{
+    margin-top: 40px;
+}
+.recruitment{
+    width: 70%;
+    display: block;
+    margin:30px auto 0;
+}
+footer{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.jonio{
+    background-color:#F59109;
+    color:#fff;
+    font-family:ピグモ;
+    width: 40px;
+    height: 40px;
+    line-height:40px;
+    border-radius:20px;
+    text-align: center;
+    display: inline-block;
+}
+.right{
+    display: inline-block;
+    font-size: 12px;
+}
+@media screen and (min-width:768px) { 
+    p{
+        font-size: 20px;
+    }
+    .header-container{
+        &__site-title{
+            font-size: 30px;     
+        }
+        &__logo{
+            vertical-align:middle;
+        }
+    }
+    .main-container{
+        padding-top: 100px;
+        &__star1{
+            left:200px;
+            top:50px;
+        }
+        &__star{
+            left:160px;
+        }
+        &__star4{
+            right:180px;
+            top:60px;
+        }
+        &__star3{
+            right:150px;
+        }
+        &__course{
+            font-size: 25px;
+        }
+    }
+    .right{
+        font-size: 15px;
+    }
+}
+@media screen and (min-width:1024px) { 
+    .header-container{
+        &__site-title {
+            font-size: 35px;
+        }
+        &__logo{
+            margin-bottom: 10px;
+        }
+    }
+}
