@@ -9,7 +9,7 @@ a {
 }
 
 h1, h2 {
-  font-family: ピグモ, sans-serif;
+  font-family: ピグモ, 'Noto Serif JP', serif;
   color: #F59109;
 }
 
@@ -370,7 +370,7 @@ footer {
 .jonio {
   background-color: #F59109;
   color: #fff;
-  font-family: ピグモ, sans-serif;
+  font-family: ピグモ, 'Noto Serif JP', serif;
   width: 40px;
   height: 40px;
   line-height: 40px;
